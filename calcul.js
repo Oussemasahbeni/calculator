@@ -6,7 +6,7 @@ function updateCalculation(value) {
   localStorage.setItem("calculation", calculation);
   showCalcul();
 }
-
+//Sex
 // Optional: you can also create a function in order
 // to reuse this code.
 // function saveCalculation() {
