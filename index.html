@@ -13,7 +13,12 @@
 
 <body>
   <div class="container">
-    <div class="child">
+
+    <p class="js-calcul"></p>
+
+    <!-- Code changes are at the bottom. -->
+    <p>
+
       <button class="btn" onclick="updateCalculation('1');">1</button>
       <button class="btn" onclick="updateCalculation('2');">2</button>
       <button class="btn" onclick="updateCalculation('3');">3</button>
@@ -54,24 +59,17 @@
 
     </div>
     <!-- Code changes are at the bottom. -->
-    =======
+  
     </p>
 
     <p>
+      <button class="btn clear" onclick="clear()">C</button>
       <button class="btn" onclick="updateCalculation('0');">0</button>
-      <button class="btn" onclick="updateCalculation('.');">.</button>
       <button class="btn" onclick="result()">=</button>
       <button class="btn2" onclick="updateCalculation(' / ');">/</button>
     </p>
 
-    <p>
-      <button class="btn clear" onclick="
-      clear()
-    ">
-        Clear
-      </button>
-    </p>
-    >>>>>>> 8a7161ddecffca0ff55369de77b6ac64df8b822d
+
 
   </div>
   <script src="calcul.js">
