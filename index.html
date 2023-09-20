@@ -12,44 +12,49 @@
 </style>
 
 <body>
-  <!-- Code changes are at the bottom. -->
-  <p>
-    <button class="btn" onclick="updateCalculation('1');">1</button>
-    <button class="btn" onclick="updateCalculation('2');">2</button>
-    <button class="btn" onclick="updateCalculation('3');">3</button>
-    <button class="btn2" onclick=" updateCalculation(' + ');">+</button>
-  </p>
+  <div class="container">
+    <div class="child">
+      <button class="btn" onclick="updateCalculation('1');">1</button>
+      <button class="btn" onclick="updateCalculation('2');">2</button>
+      <button class="btn" onclick="updateCalculation('3');">3</button>
+      <button class="btn2" onclick=" updateCalculation(' + ');">+</button>
+    </div>
+    <div class="child">
 
-  <p>
-    <button class="btn" onclick="updateCalculation('4');">4</button>
-    <button class="btn" onclick="updateCalculation('5');">5</button>
-    <button class="btn" onclick="updateCalculation('6');">6</button>
-    <button class="btn2" onclick="updateCalculation(' - ');">-</button>
-  </p>
+      <button class="btn" onclick="updateCalculation('4');">4</button>
+      <button class="btn" onclick="updateCalculation('5');">5</button>
+      <button class="btn" onclick="updateCalculation('6');">6</button>
+      <button class="btn2" onclick="updateCalculation(' - ');">-</button>
 
-  <p>
-    <button class="btn" onclick="updateCalculation('7');">7</button>
-    <button class="btn" onclick="updateCalculation('8');">8</button>
-    <button class="btn" onclick="updateCalculation('9');">9</button>
-    <button class="btn2" onclick="updateCalculation(' * ');">*</button>
-  </p>
+    </div>
+    <div class="child">
 
-  <p>
-    <button class="btn" onclick="updateCalculation('0');">0</button>
-    <button class="btn" onclick="updateCalculation('.');">.</button>
-    <button class="btn" onclick="result()">=</button>
-    <button class="btn2" onclick="updateCalculation(' / ');">/</button>
-  </p>
+      <button class="btn" onclick="updateCalculation('7');">7</button>
+      <button class="btn" onclick="updateCalculation('8');">8</button>
+      <button class="btn" onclick="updateCalculation('9');">9</button>
+      <button class="btn2" onclick="updateCalculation(' * ');">*</button>
 
-  <p>
+    </div>
+    <div class="child">
+
+      <button class="btn" onclick="updateCalculation('0');">0</button>
+      <button class="btn" onclick="updateCalculation('.');">.</button>
+      <button class="btn" onclick="result()">=</button>
+      <button class="btn2" onclick="updateCalculation(' / ');">/</button>
+
+    </div>
+
     <button class="btn clear" onclick="
-      clear()
-    ">
+        clear()
+      ">
       Clear
     </button>
-  </p>
 
-  <p class="js-calcul"></p>
+
+    <p class="js-calcul"></p>
+
+  </div>
+  <!-- Code changes are at the bottom. -->
 
   <script src="calcul.js">
 
