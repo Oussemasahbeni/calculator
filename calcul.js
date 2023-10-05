@@ -1,12 +1,13 @@
 let calculation = localStorage.getItem("calculation") || "";
+console.log("first ", calculation);
 const value = document.querySelector(".js-calcul");
-showCalcul();
+// showCalcul();
 function updateCalculation(value) {
   calculation += value;
   localStorage.setItem("calculation", calculation);
   showCalcul();
 }
-//Sex
+
 // Optional: you can also create a function in order
 // to reuse this code.
 // function saveCalculation() {
@@ -15,7 +16,7 @@ function updateCalculation(value) {
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "+", "*", "-", "/"];
 document.addEventListener("keydown", (event) => {
-  console.log(event.key);
+  // console.log(event.key);
   numbers.forEach((element) => {
     if (element == event.key) {
       document.querySelector(".js-calcul").innerHTML = event.key;
@@ -26,12 +27,13 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Backspace") {
     clear();
   }
-  if (event.key === "Enter") {
+  if (event.key == "Enter") {
     result();
   }
 });
 
 function showCalcul() {
+  console.log("second " + calculation);
   document.querySelector(".js-calcul").innerHTML = calculation;
 }
 
